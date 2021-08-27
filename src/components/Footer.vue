@@ -85,7 +85,7 @@ footer {
 
       @media (min-width: 800px) {
         flex-direction: row;
-        align-items: initial;
+        align-items: normal;
         gap: 0;
       }
 
@@ -101,68 +101,66 @@ footer {
         display: flex;
       }
       .col-1,
-      .colo-2 {
+      .col-2 {
         gap: 32px;
         display: flex;
         flex: 1;
         @media (min-width: 800px) {
           gap: 0;
         }
-
-        .col-1 {
-          flex-direction: column;
-          h2 {
-            text-align: center;
-            @media (min-width: 800px) {
-              text-align: initial;
-            }
-          }
-          ul {
-            margin-top: auto;
-            li {
-              display: flex;
-              align-items: center;
-              .svg-icon {
-                width: 24px;
-                height: auto;
-                color: #fff;
-              }
-            }
-          }
-        }
-        .col-2 {
-          ul {
-            height: 100%;
-            justify-content: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-
-            @media (min-width: 800px) {
-              flex-direction: column;
-            }
-            .link {
-              font-size: 16px;
-              font-weight: 500;
-              color: #fff;
-              text-decoration: none;
-            }
-          }
-        }
       }
-
-      .right {
-        gap: 32px;
-        color: #fff;
-        align-items: center;
+      .col-1 {
         flex-direction: column;
-        @media (min-width: 800px) {
-          align-items: flex-end;
-          gap: 0;
+        h2 {
+          text-align: center;
+          @media (min-width: 800px) {
+            text-align: initial;
+          }
+        }
+        ul {
+          margin-top: auto;
+          li {
+            display: flex;
+            align-items: center;
+            .svg-icon {
+              width: 24px;
+              height: auto;
+              color: #fff;
+            }
+          }
         }
       }
-      p {
-        margin-top: auto;
+      .col-2 {
+        ul {
+          height: 100%;
+          justify-content: center;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          @media (min-width: 800px) {
+            flex-direction: column;
+          }
+          .link {
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+          }
+        }
       }
+    }
+    .right {
+      gap: 32px;
+      color: #fff;
+      align-items: center;
+      flex-direction: column;
+      @media (min-width: 800px) {
+        align-items: flex-end;
+        gap: 0;
+      }
+    }
+    p {
+      margin-top: auto;
     }
   }
 }
