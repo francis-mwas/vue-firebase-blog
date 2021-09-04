@@ -82,8 +82,7 @@ export default {
   .login-register {
     margin-bottom: 12px;
 
-    .router-link {
-      color: #000;
+    .router-link {  
     }
   }
   form {
