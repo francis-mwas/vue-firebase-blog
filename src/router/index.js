@@ -7,6 +7,9 @@ import Register from '../views/Register.vue';
 import ForgotPassword from '../views/ForgotPassword';
 import Profile from '../views/Profile.vue';
 import Admin from '../views/Admin.vue';
+import CreatePost from '../views/CreatePost.vue';
+import BlogPreview from '../views/BlogPreview.vue';
+import ViewBlog from '../views/ViewBlog.vue';
 
 Vue.use(VueRouter);
 
@@ -65,6 +68,30 @@ const routes = [
     component: Admin,
     meta: {
       title: 'Admin page',
+    },
+  },
+  {
+    path: '/create-post',
+    name: 'CreatePost',
+    component: CreatePost,
+    meta: {
+      title: 'Create post',
+    },
+  },
+  {
+    path: '/post-preview',
+    name: 'BlogPreview',
+    component: BlogPreview,
+    meta: {
+      title: 'Preview Blog Post',
+    },
+  },
+  {
+    path: '/view-blog',
+    name: 'ViewBlog',
+    component: ViewBlog,
+    meta: {
+      title: 'View Blog Post',
     },
   },
 ];
